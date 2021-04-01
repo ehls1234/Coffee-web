@@ -3,25 +3,46 @@
 <head>
     <title>카페 레시피의 공유(Sharing recipes a cafe)</title>
     <meta charset="utf-8">
+    <style>
+    a{
+        color:black;
+        text-decoration: none;
+    }
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .maincoffee{
+        text-align: center;
+    }
+    li {
+        list-style: none;
+    }
+    </style>
 </head>
 <body>
-    <h1><strong>카페 레시피의 공유(Sharing recipes a cafe)</strong></h1>
+    <h1><strong>카페 레시피의 공유<br>(Sharing recipes a cafe)</strong></h1>
 
-    <h2><strong><a href="coffee.html">Coffee</a></strong></h2>
-<p>
-<ol>
+    <h2 class="maincoffee"><strong><a href="coffee.html">Coffee</a></strong></h2>
+<ol class="maincoffee">
     <li>모카 라떼(Mocha Latte)</li>
     <li>캬라멜 마끼아또(Caramel macchiato)</li>
     <li>바닐라 라떼(Vanila latte)</li>
  </ol>
-</P>
-<p>
-    <h2><strong><a href="Non coffee.html">Non-Coffee</a></strong></h2>
-<ol>
-    <li>더블 초코 라떼(double chocolate latte)></li>
+
+<!--
+    HTML 폰트 태그 실험
+<font color="blue">
+<h2><strong><a href="coffee.html"><font color="blue">Coffee</font></a></strong></h2>
+<h2><strong><a href="Non coffee.html"><font color="blue">Non-Coffee</font></a></strong></h2>
+    -->
+
+    <h2 class="maincoffee"><strong><a href="Non coffee.html">Non-Coffee</a></strong></h2>
+<ol class="maincoffee">
+    <li>더블 초코 라떼(double chocolate latte)</li>
     <li>그린티 라떼(Vanila latte)</li>
     <li>밀크티(Mocha Latte)</li>
 </ol>
-</p>
+
 </body>
 </html>
