@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+h1{
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin: 0;
+    border-bottom: 0.5px solid gray;
+    padding: 50px;
+}
+h2{
+    padding: 25px 0px
+}
+#coffee{
+    margin: 0;
+    border-right: 0.5px solid gray;
+}
+#noncoffee{
+    margin: 0;
+}
+#maingrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
