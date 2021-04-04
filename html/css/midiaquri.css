@@ -1,0 +1,12 @@
+@media(max-width:650px) 
+{
+    #maingrid{
+    /* Main grid */
+    display: block;
+    /* Main grid */
+    }
+    #coffee{
+        margin: 0;
+        border-right: none;
+    }
+}

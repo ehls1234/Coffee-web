@@ -19,6 +19,16 @@ h2{
     margin: 0;
 }
 #maingrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   /* Main grid */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   /* Main grid */
+}
+#coffee123margin{
+    padding-bottom: 45px;
+    border-bottom: 0.5px solid gray;
+}
+#noncoffee123margin{
+    padding-bottom: 45px;
+    border-bottom: 0.5px solid gray;
 }
