@@ -1,0 +1,27 @@
+h1{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin: 0;
+    padding: 50px;
+}
+h3{
+    padding: 50px 0 50px 0;
+}
+p{
+    padding: 40px;
+}
+ol{
+    padding: 30px 0 0 0;
+    line-height: 30px;
+}
+.coffee{
+    padding: 20px 0px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    border-top: 0.5px grey solid;
+    border-bottom: 0.5px grey solid;
+}
+
+/* position */
+
