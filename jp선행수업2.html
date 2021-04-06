@@ -23,5 +23,35 @@ while(i < coworkers.length){
     </script>
 </ul>
 
+<h1>함수(Function)</h1>
+
+<h2>basic</h2>
+<ul>
+    <script>
+        function two(){
+        document.write('<li>2-1</li>');
+        document.write('<li>2-2</li>');
+    }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+    </script>
+</ul>
+<h2>매개변수와 인자(Parmeter & Argument)</h2>
+<script>
+    function onePlusOne(){
+    document.write(1+1+'<br>'); 
+    }
+    onePlusOne();
+    function sum(left, right){
+        document.write(left+right+'<br>');
+    }
+    sum(2,3); //5
+    sum(3,4); //7
+
+    //sum이라는 함수에 2,3값을 입력해 주는걸 통해서 5라는 값을 출력할 수 있게 됨
+    //여기서 2,3을 인자, function sum(left, right) 에서 left, right 가 매개변수
+</script>
 </body>
 </html>

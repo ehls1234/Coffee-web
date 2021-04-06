@@ -45,12 +45,53 @@
         document.write("4<br>");
     </script>
 
-        <h2>IF-false</h2>
-        <script>
+    <h2>IF-false</h2>
+    <script>
             document.write("1<br>");
             if(false){document.write("2<br>");}
             else {document.write("3<br>");}
             document.write("4<br>");
-        </script>
+    </script>
+
+
+    <h1>배열(Array)</h1>
+    <h2>문법(syntax)</h2>
+    <script>
+       var testing1 = ["egoing", "leezche"];
+    </script>
+    <h2>get</h2>
+    <script>
+        document.write(testing1[0]);
+        document.write(testing1[1]);
+    </script>
+
+
+    <h2>add</h2>
+    <script>
+        testing1.push('duru');
+        testing1.push('taeho');
+    </script>
+
+
+    <h2>count</h2>
+    <script>
+        document.write(testing1.length);
+    </script>
+
+
+<h1>반복문(loop)</h1>
+<ul>
+    <script>
+        document.write('<li>1</li>');
+        var i = 0;
+        while(i < 3){
+        document.write('<li>2</li>');
+        document.write('<li>3</li>');
+        i = i + 1;
+        }
+        document.write('<li>4</li>');
+    </script>
+</ul>
+
 </body>
 </html>
