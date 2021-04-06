@@ -14,7 +14,35 @@
 
 <body>
 
- <input id="nightday" type="button" value="Night" onclick="
+ <input id="nightday2" type="button" value="Night" onclick="
+var target = document.querySelector('body')
+if (this.value === 'Night')
+        {target.style.backgroundColor='black';
+         target.style.color='white';
+         this.value = 'Day';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+    alist[i].style.color='white';
+    i=i+1;
+    }
+}
+else    {target.style.backgroundColor='white';
+         target.style.color='black';
+         this.value = 'Night';
+        
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+    alist[i].style.color='black';
+    i=i+1;
+    }
+}
+ ">
+<!-- var target, this의 코드 간략화(상단) - 21-04-06 -->
+<!-- 배열 -->
+<input id="nightday" type="button" value="Night" onclick="
 if (document.querySelector('#nightday').value === 'Night')
         {document.querySelector('body').style.backgroundColor='black';
          document.querySelector('body').style.color='white';
@@ -24,6 +52,7 @@ else    {document.querySelector('body').style.backgroundColor='white';
          document.querySelector('body').style.color='black';
          document.querySelector('#nightday').value = 'Night';}
  ">
+
 <!-- ★ 버튼안의 "value=night"가  true(value === 'night') 되었을때 
     배경 블랙(backgroundColor = 'black') 
     / 글자 흰색(Color = 'white') 
