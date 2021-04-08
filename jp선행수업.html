@@ -93,5 +93,15 @@
     </script>
 </ul>
 
+
+<script>
+    function test(){
+    var foo = 33;
+    if (true) {
+    let foo = (foo + 55); // ReferenceError
+   }
+}
+test();
+</script>
 </body>
 </html>

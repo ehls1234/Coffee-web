@@ -2,11 +2,11 @@
 <html lang="ko">
 
 <head>
-    <link rel="stylesheet" href="html/css/main/style.css">
-    <link rel="stylesheet" href="html/css/main/mainboxmodell.css">
-    <link rel="stylesheet" href="html/css/midiaquri.css">
-    <link rel="stylesheet" href="html/css/main/mainbackground.css">
-    <link rel="stylesheet" href="html/css/fadeinani.css">
+    <link rel="stylesheet" href="/html/css/main/style.css">
+    <link rel="stylesheet" href="/html/css/main/mainboxmodell.css">
+    <link rel="stylesheet" href="/html/css/main/midiaquri.css">
+    <link rel="stylesheet" href="/html/css/main/mainbackground.css">
+    <link rel="stylesheet" href="/html/css/fadeinani.css">
     <title>js 공부용 사이트</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,31 +15,7 @@
 <body>
 
  <input id="nightday2" type="button" value="Night" onclick="
-var target = document.querySelector('body')
-if (this.value === 'Night')
-        {target.style.backgroundColor='black';
-         target.style.color='white';
-         this.value = 'Day';
-
-var alist = document.querySelectorAll('a');
-var i = 0;
-while(i < alist.length){
-    alist[i].style.color='white';
-    i=i+1;
-    }
-}
-else    {target.style.backgroundColor='white';
-         target.style.color='black';
-         this.value = 'Night';
-        
-var alist = document.querySelectorAll('a');
-var i = 0;
-while(i < alist.length){
-    alist[i].style.color='black';
-    i=i+1;
-    }
-}
- ">
+nightDayHandler(this)">
 <!-- var target, this의 코드 간략화(상단) - 21-04-06 -->
 <!-- 배열 -->
 <input id="nightday" type="button" value="Night" onclick="
@@ -92,6 +68,6 @@ else    {document.querySelector('body').style.backgroundColor='white';
     <div class="mainimgtext"><Strong><b>Wish you happiness</b></Strong></div>
     <div class="black50"><img src="html/img/black.png" width="100%"></div>
 </div>
-
+<script src="html/js/main.js"></script>
 </body>
 </html>
