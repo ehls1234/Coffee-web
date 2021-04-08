@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/main/style.css">
     <link rel="stylesheet" href="css/main/mainboxmodell.css">
-    <link rel="stylesheet" href="css/midiaquri.css">
+    <link rel="stylesheet" href="css/main/midiaquri.css">
     <link rel="stylesheet" href="css/main/mainbackground.css">
     <link rel="stylesheet" href="css/fadeinani.css">
     <title>카페 레시피의 공유(Sharing recipes a cafe)</title>
@@ -14,31 +14,8 @@
 
 <body>
     <input id="nightday2" type="button" value="Night" onclick="
-    var target = document.querySelector('body')
-    if (this.value === 'Night')
-            {target.style.backgroundColor='black';
-             target.style.color='white';
-             this.value = 'Day';
-    
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color='white';
-        i=i+1;
-        }
-    }
-    else    {target.style.backgroundColor='white';
-             target.style.color='black';
-             this.value = 'Night';
-            
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-        alist[i].style.color='black';
-        i=i+1;
-        }
-    }
-     ">
+    nightDayHandler(this)">
+
 <h1><strong>카페 레시피의 공유<br>(Sharing recipes a cafe)</strong></h1>
 
 <div id="maingrid"> 
@@ -73,6 +50,6 @@
     <div class="mainimgtext"><Strong><b>Wish you happiness</b></Strong></div>
     <div class="black50"><img src="img/black.png" width="100%"></div>
 </div>
-
+<script src="js/main.js"></script>
 </body>
 </html>
