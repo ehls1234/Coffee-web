@@ -1,16 +1,28 @@
 body{
     margin: 0;
 }
+
 a{
     text-decoration: none;
     color: black;
 }
 
-.navbar_menu li:hover{
+i{
+    padding-left: 16px;
+}
+/*hover*/
+.navbar_menu .menu_item a:hover{
+    transition: background-color .5s;
+    color: white;
     background-color: gray;
     border-radius: 6px;
-    color: white;
 }
+
+#menu_item_link{
+    display: inline-block;
+    padding: 8px 10px;
+}
+/*hover end*/
 
 .navbar{
     display: flex;
@@ -24,6 +36,7 @@ a{
     font-weight:bold;
     font-size: 30px;
 }
+
 .navbar_logo i{
     color: black;
 }
@@ -31,10 +44,9 @@ a{
 .navbar_menu{
     display: flex;
     list-style: none;
-    padding-left: 0;
 }
 
-.navbar_menu li{
+.navbar_menu .menu_item{
     padding: 8px 20px;
 }
 
@@ -54,35 +66,86 @@ a{
     color: black;
 }
 
-@media screen and (max-width:950px) 
+/*clock*/
+.clock_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock_text{
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#clock, #clock_item{
+    display: flex;
+    color: white;
+    letter-spacing: 10px;
+    text-align: center;
+}
+/*clock end*/
+
+.foo{
+    margin: 0px;
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: #FFEFE3;
+}
+
+.foo_icon{
+    font-size: 50px;
+}
+
+/*media query*/
+@media screen and (max-width:990px) 
 {
 
 .navbar{
     flex-direction: column;
     align-items: flex-start;
 }
+
 .navbar_menu{
     display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 20px 0;
+    margin: 0;
 }
-.navbar_menu li{
+
+#menu_item_link{
+    padding: 8px 100px;
+}
+
+.navbar_menu .menu_item{
     width: 100%;
     text-align: center;
 }
+
 .navbar_icon{
     display: none;
     justify-content: center;
     width: 100%;
+    margin: 0;
 }
 
 .navbar_toogleBtn{
     display: block;
 }
+
 .navbar_menu.active,
 .navbar_icon.active{
     display: flex;
 }
 
 }
+/*media query end*/
